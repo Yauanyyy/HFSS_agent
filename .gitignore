@@ -1,0 +1,16 @@
+# Ignore everything by default
+*
+
+# Allow directory traversal for negated patterns
+!*/
+
+# Keep repository metadata we want to sync
+!.gitignore
+!CLAUDE.md
+!.claude/
+!.claude/**
+
+# Keep local-only Claude settings out of git
+.claude/settings.local.json
+.claude/worktree/
+.claude/worktrees/
