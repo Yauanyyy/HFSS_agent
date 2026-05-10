@@ -2,6 +2,10 @@
 - AEDT 2022 R1 + PyAEDT - use project .venv, install both `pyaedt==0.18.1` and `pythonnet`, otherwise PyAEDT falls back to broken gRPC startup on 2022.1.
 - Project venv path - use `C:/F/CODEFILE/HFSS_agent/.venv/Scripts/python.exe` for PyAEDT, pytest, and automation runs in this repo.
 
+## Collaboration
+- Default autonomous decision-making - when multiple reasonable implementation approaches exist, choose the most practical option yourself and continue without asking the user to pick.
+- Escalation threshold - only ask the user to choose when the decision is high-risk, irreversible, affects external/shared systems, or is a true business/product tradeoff.
+
 ## Commands and Workflow
 - AEDT CLI `-ng` - must be combined with `-batchsolve`, `-batchsave`, or `-batchextract`; `ansysedt.exe -ng` alone is invalid.
 - HFSS automation workflow - validate changes in order: Desktop smoke test -> model build test -> solve/export test -> optimization loop.
